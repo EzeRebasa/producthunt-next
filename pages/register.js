@@ -1,18 +1,25 @@
 import React from "react";
+import { css } from '@emotion/core';
 import Layout from "../components/layout/Layout";
+import { Form, Field, InputSubmit } from "../components/ui/Form";
 
 const Register = () => (
   <div>
     <Layout>
       <>
-        <h1> Register </h1>
-        <form>
-          <div>
+        <h1
+          css={css`
+            text-align: center;
+            margin-top: 5rem;
+          `}
+        > Register </h1>
+        <Form>
+          <Field>
             <label htmlFor="name"> Name </label>
             <input type="text" id="name" placeholder="Your Name" name="name" />
-          </div>
+          </Field>
 
-          <div>
+          <Field>
             <label htmlFor="email"> Email </label>
             <input
               type="email"
@@ -20,9 +27,9 @@ const Register = () => (
               placeholder="Your Email"
               name="email"
             />
-          </div>
+          </Field>
 
-          <div>
+          <Field>
             <label htmlFor="password"> Password </label>
             <input
               type="password"
@@ -30,11 +37,11 @@ const Register = () => (
               placeholder="Your Password"
               name="password"
             />
-          </div>
+          </Field>
 
-          <input type="submit" value="Register" />
-          
-        </form>
+          <InputSubmit type="submit" value="Register" />
+
+        </Form>
       </>
     </Layout>
   </div>
