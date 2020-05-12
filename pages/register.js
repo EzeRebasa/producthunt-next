@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/layout/Layout";
 
-const Us = () => (
+const Register = () => (
   <div>
     <Layout>
-    <h1> Us </h1>
+    <h1> Register </h1>
     </Layout>
   </div>
 );
 
-export default Us;
+export default Register;
