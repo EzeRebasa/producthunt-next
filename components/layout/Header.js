@@ -25,7 +25,7 @@ const Logo = styled.p`
   margin-right: 2rem;
 `;
 
-const user = true;
+const user = false;
 
 const Header = () => {
   return (
@@ -72,10 +72,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link href="/">
+              <Link href="/login">
                 <Button bgColor="true"> Login </Button>
               </Link>
-              <Link href="/">
+              <Link href="/register">
                 <Button> Register </Button>
               </Link>
             </>
