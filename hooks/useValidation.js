@@ -36,6 +36,7 @@ const useValidation = (initialState, validate, fn) => {
 
     // when user makes blur event
     const handleBlur = () => {
+        console.log('En handleBlur')
         const errorsValidation = validate(values);
         setErrors(errorsValidation);
     }
